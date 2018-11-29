@@ -25,7 +25,7 @@ let _makeProduct = require('./modules/product-html');
  let _makeCategory = require('./modules/category-html');
  jQuery.ajax({
  	type: 'GET',
-	url: 'http://nit.tron.net.ua/api/category/list',
+	url: 'https://nit.tron.net.ua/api/category/list',
 	data: { get_param: 'value'},
 	dataType: 'json',
 
@@ -53,7 +53,7 @@ $(document).on("click",".category-li",function() {
 		let _makeProduct = require('./modules/product-html');
 		if( id != 1){
 	 jQuery.ajax({
-		url: 'http://nit.tron.net.ua/api/product/list/category/' + id,
+		url: 'https://nit.tron.net.ua/api/product/list/category/' + id,
 		method: 'get',
 	 	dataType: 'json',
 	 	success: function(json){
@@ -68,7 +68,7 @@ $(document).on("click",".category-li",function() {
 	 });
 	}else{
 		jQuery.ajax({
-		url: 'http://nit.tron.net.ua/api/product/list',
+		url: 'https://nit.tron.net.ua/api/product/list',
 		method: 'get',
 	 	dataType: 'json',
 	 	success: function(json){
@@ -91,7 +91,7 @@ $(document).on("mouseenter",".product",function() {
  		
 		 jQuery.ajax({
 		 	type: 'GET',
-			url: 'http://nit.tron.net.ua/api/product/' + id,			
+			url: 'https://nit.tron.net.ua/api/product/' + id,			
 			data: { get_param: 'value'},
 		 	dataType: 'json',
 
