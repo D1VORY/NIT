@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DubMarket</title>
+		<link rel="stylesheet" href="./css/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">DubMarket</a>
+		    </div>
+		    <ul class = "nav navbar-nav category-ul ">
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+
+
+		        <li class = "cart">
+		        	<button type="button" class="btn glyphicon glyphicon-shopping-cart" data-toggle="modal" data-target="#myModal"> Cart</button></li>
+		    </ul>
+		  </div>
+		</nav>
+
+		<div class="modal fade" id="myModal" role="dialog">
+		    <div class="modal-dialog modal-lg">
+		    
+		      <!-- Modal content-->
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <h4 class="modal-title">Bought goods</h4>
+		        </div>
+
+		        <div class="modal-body">
+		          
+
+		        </div>
+
+		        <div class = "modal-body2">
+		        	<span class = "product-price" id = "totSum">Total sum: </span>
+		        	<span class = "product-price total-product-price"> </span>	
+
+		        	<div class="form-group ">
+					  <label for="usr">Name:</label>
+					  <input type="text" class="form-control name" id="usr">
+					</div>
+					<div class="form-group ">
+					  <label for="usr">Telephone:</label>
+					  <input type="text" class="form-control telephone" id="pwd">
+					</div>
+					<div class="form-group ">
+					  <label for="usr">E-mail:</label>
+					  <input type="text" class="form-control email" id="pwd">
+					</div>
+					<button type="button" class="purchase btn btn-danger btn-block"> Confirm Purchase </button>
+		        </div>
+		        <div class="modal-footer">
+		          	
+		          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        </div>
+		      </div>
+		      
+		    </div>
+		</div>
+		
+
+	 	<div class="container">
+			<div class="row product-grid">
+
+
+	 		</div>
+		</div>
+
+		<!-- Footer -->
+<footer class="page-footer font-small  pt-4">
+
+  
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright: 
+   Made and suffered by Olexandr Dubchak
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
